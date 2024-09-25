@@ -4,6 +4,7 @@ export const theme = {
   extend: {
     width: {
       "1/10": "10%", // Ajout de la largeur personnalisée 1/10
+      "1/9": "90%",
     },
     // autres extensions de thème
   },

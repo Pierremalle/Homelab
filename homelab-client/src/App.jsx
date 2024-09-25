@@ -33,23 +33,24 @@ const routesLinks = [
 function App() {
   return (
     <DarkModeProvider>
-      <Router>
+      <div className="md:flex w-screen">
         <SideBar routesLinks={routesLinks} />
-
-        <Routes>
-          <Route path="/" element={<HomePage />} />
-          <Route
-            path="/home"
-            element={
-              <>
-                <HomePage />
-                <Outlet />
-              </>
-            }
-          />
-          <Route path="*" element={<NotFoundPage />} />
-        </Routes>
-      </Router>
+        <Router>
+          <Routes>
+            <Route path="/" element={<HomePage />} />
+            <Route
+              path="/home"
+              element={
+                <>
+                  <HomePage />
+                  <Outlet />
+                </>
+              }
+            />
+            <Route path="*" element={<NotFoundPage />} />
+          </Routes>
+        </Router>
+      </div>
     </DarkModeProvider>
   );
 }

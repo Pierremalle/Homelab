@@ -5,7 +5,7 @@ export function DarkModeToggle() {
   const { isDarkMode, toggleDarkMode } = useContext(DarkModeContext);
 
   return (
-    <label className="inline-flex items-center cursor-pointer">
+    <label className="inline-flex items-center cursor-pointer pt-6">
       <input
         type="checkbox"
         value={isDarkMode}
